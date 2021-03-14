@@ -32,8 +32,17 @@ this.currentCategory = category;
      if(category==this.currentCategory){
        return "list-group-item active"
      }
-     else{"list-group-item"
-       return 
+     else{
+       return "list-group-item"
+     }
+   }
+
+   getAllCategoryClass(){
+     if(!this.currentCategory){
+      return "list-group-item active"
+     }
+     else{
+      return "list-group-item"
      }
    }
 }
